@@ -20,9 +20,10 @@ html {
 }
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
     padding: 0px 15px;
     margin: auto;
+    
 }
 
 .section {
@@ -50,6 +51,7 @@ html {
 .navigation {
     display: flex;
     align-items: center;
+    margin-right: 100px;
 }
 
 .logo-accept {
@@ -378,9 +380,11 @@ p {
     background-color: var(--bg-color);
 }
 
+
+}
 .card-staff {
     display: flex;
-    margin: 0px;
+    flex-wrap: wrap;
 }
 
 .card-item {
@@ -389,6 +393,11 @@ p {
     text-align: center;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-top: calc(-1 * var(--portfolio-box-gap));
+    margin-left: calc(-1 * var(--portfolio-box-gap)); */
 }
 
 .card-text {
@@ -532,6 +541,13 @@ p {
     margin-left: 0px;
 }
 
+.portfolio-family {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--portfolio-box-gap));
+    margin-left: 150px;
+    margin-bottom: 0px;
+}
 .portfolio {
     display: flex;
     flex-wrap: wrap;
